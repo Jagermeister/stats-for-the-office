@@ -16,11 +16,11 @@ export class HomeComponent implements OnInit {
             description: 'subscribers'
         }, {
             name: 'Analytics',
-            value: '38',
+            value: '39',
             description: 'users'
         }, {
             name: 'Analytics',
-            value: '161',
+            value: '163',
             description: 'pageviews'
         }, {
             name: 'Search',
@@ -40,11 +40,11 @@ export class HomeComponent implements OnInit {
             description: 'tweets'
         }, {
             name: 'Twitter',
-            value: '430',
+            value: '455',
             description: 'impressions'
         }, {
             name: 'Twitter',
-            value: '12',
+            value: '15',
             description: 'engagement'
         }, {
             name: 'LinkedIn',

@@ -5,6 +5,6 @@
 
 #page {
     font-family: 'Maiandra';
-    min-height: 820px;
+    min-height: 100%;
     background: rgba(50,140,193, 0.7);
 }

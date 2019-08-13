@@ -18,7 +18,7 @@ const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./server/main');
 const BROWSER_FOLDER = join(process.cwd(), 'browser');
 
 // Load the index.html file containing referances to your application bundle.
-const index = readFileSync(join('stats-for-the-office', 'index.html'), 'utf8');
+const index = readFileSync(join('browser', 'index.html'), 'utf8');
 
 let previousRender = Promise.resolve();
 
