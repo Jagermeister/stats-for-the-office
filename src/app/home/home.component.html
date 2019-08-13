@@ -1,1 +1,8 @@
-HOME PAGE
+<div style="padding: 20px;"
+    fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="16px grid" fxLayoutAlign="flex-start">
+    <app-summary *ngFor="let summary of summarys"
+        [summary]="summary"
+        fxFlex="1 1 calc(33.3% - 32px)"
+        fxFlex.lt-md="1 1 calc(50% - 32px)"
+        fxFlex.lt-sm="100%"></app-summary>
+</div>
