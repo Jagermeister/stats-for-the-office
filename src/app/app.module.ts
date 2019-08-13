@@ -15,7 +15,7 @@ import { HomeComponent } from './home/home.component';
     ],
     imports: [
         RoutingModule,
-        BrowserModule,
+        BrowserModule.withServerTransition({appId: 'stats-for-the-office'}),
         MaterialModule
     ],
     providers: [],

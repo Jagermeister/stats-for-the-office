@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "build:client-and-server-bundles": "ng build --prod && ng run stats-for-the-office:server",
+    "build:prerender": "npm run build:client-and-server-bundles && npm run compile:server && npm run generate:prerender",
+    "compile:server": "tsc -p server.tsconfig.json",
+    "generate:prerender": "cd dist && node prerender"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +38,7 @@
     "@angular/cli": "^8.0.2",
     "@angular/compiler-cli": "^8.0.0",
     "@angular/language-service": "^8.0.0",
+    "@angular/platform-server": "^8.1.2",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",

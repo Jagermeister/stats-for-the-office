@@ -6,3 +6,6 @@
 ## Development server
 
 `ng serve --open`
+
+## Production Prerender
+`npm run build:prerender`
