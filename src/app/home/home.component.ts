@@ -12,15 +12,15 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
         this.summarys = [{
             name: 'MailChimp',
-            value: '14',
+            value: '15',
             description: 'subscribers'
         }, {
             name: 'Analytics',
-            value: '42',
+            value: '44',
             description: 'users'
         }, {
             name: 'Analytics',
-            value: '173',
+            value: '190',
             description: 'pageviews'
         }, {
             name: 'Search',
@@ -28,11 +28,11 @@ export class HomeComponent implements OnInit {
             description: 'click'
         }, {
             name: 'Search',
-            value: '218',
+            value: '287',
             description: 'impressions'
         }, {
             name: 'Search',
-            value: '86.2',
+            value: '85.7',
             description: 'page rank'
         }, {
             name: 'Twitter',
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
             description: 'tweets'
         }, {
             name: 'Twitter',
-            value: (120 + 90 + 117 + 59 + 82 + 47).toString(),
+            value: (126 + 96 + 133 + 66 + 84 + 66).toString(),
             description: 'impressions'
         }, {
             name: 'Twitter',
