@@ -2,13 +2,42 @@
     .mat-card-content {
         font-size: 18px;
     }
+
+    .durationTitle {
+        font-size: small;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .winner {
+        font-weight: bold;
+        color: green;
+    }
 </style>
 
 <mat-card>
-    <mat-card-title>{{summary.name}}</mat-card-title>
+    <mat-card-title>
+        <img *ngIf="summary.icon" width=20px height=20px src="../../assets/icons/{{summary.icon}}">
+        {{summary.name}} - {{summary.description}}</mat-card-title>
     <mat-card-subtitle></mat-card-subtitle>
     <mat-card-content>
-        <b>{{summary.value}}</b>
-        {{summary.description}}
+        <div style="padding: 8px;"
+            fxLayout="row wrap"
+            fxLayoutGap="16px grid" fxLayoutAlign="flex-start">
+            <ng-container *ngFor="let value of summary.values.slice(0, 2).reverse()">
+                <table fxFlex="1 1 calc(33.3% - 32px)">
+                    <tr><td [className]="
+                        (!summary.isAverage && value.value > summary.values[1].value) ||
+                        (summary.isAverage && value.value < summary.values[1].value) ? 'winner' : ''"
+                        >{{summary.valuePrefix}}{{value.value}}</td></tr>
+                    <tr><td class="durationTitle">{{value.month}}</td></tr>
+                </table>
+            </ng-container>
+            <table fxFlex="1 1 calc(33.3% - 32px)">
+                <tr *ngIf="!summary.isAverage"><td>{{totalValue(summary.values)}}</td></tr>
+                <tr *ngIf="summary.isAverage"><td>{{averageValue(summary.values)}}</td></tr>
+                <tr><td class="durationTitle">{{summary.isAverage ? 'Average' : 'Total'}}</td></tr>
+            </table>
+        </div>
     </mat-card-content>
 </mat-card>

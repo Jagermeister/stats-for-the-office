@@ -13,4 +13,12 @@ export class SummaryComponent implements OnInit {
     ngOnInit() {
     }
 
+    totalValue(summarys: SummaryDetail[]) {
+        return summarys.map(s => s.value).reduce((p, c) => p + c, 0);
+    }
+
+    averageValue(summarys: SummaryDetail[]) {
+        return this.totalValue(summarys) / summarys.length;
+    }
+
 }

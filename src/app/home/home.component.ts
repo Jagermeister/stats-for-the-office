@@ -5,67 +5,197 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+    public dateUpdated: string;
     public summarys: Summary[];
 
     constructor() { }
 
     ngOnInit() {
+        this.dateUpdated = '17 Aug, 2019';
         this.summarys = [{
             name: 'MailChimp',
-            value: '15',
-            description: 'subscribers'
+            icon: 'mailchimp.ico',
+            description: 'contacts',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 4
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 11
+            }]
         }, {
             name: 'Analytics',
-            value: '44',
-            description: 'users'
+            icon: 'analytics.png',
+            description: 'users',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 28
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 19
+            }]
         }, {
             name: 'Analytics',
-            value: '190',
-            description: 'pageviews'
+            icon: 'analytics.png',
+            description: 'pageviews',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 119
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 71
+            }]
         }, {
             name: 'Search',
-            value: '1',
-            description: 'click'
+            icon: 'search.png',
+            description: 'click',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 1
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 0
+            }]
         }, {
             name: 'Search',
-            value: '287',
-            description: 'impressions'
+            icon: 'search.png',
+            description: 'impressions',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 259
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 28
+            }]
         }, {
             name: 'Search',
-            value: '85.7',
-            description: 'page rank'
+            icon: 'search.png',
+            description: 'page rank',
+            isAverage: true,
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 87.8
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 65.8
+            }]
         }, {
             name: 'Twitter',
-            value: '6',
-            description: 'tweets'
+            icon: 'twitter-box.svg',
+            description: 'tweets',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 5
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 1
+            }]
         }, {
             name: 'Twitter',
-            value: (126 + 96 + 133 + 66 + 84 + 66).toString(),
-            description: 'impressions'
+            icon: 'twitter-box.svg',
+            description: 'impressions',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 510
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 62
+            }]
         }, {
             name: 'Twitter',
-            value: (4 + 0 + 1 + 3 + 4 + 5).toString(),
-            description: 'engagement'
+            icon: 'twitter-box.svg',
+            description: 'engagement',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 13
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 4
+            }]
         }, {
             name: 'LinkedIn',
-            value: '3',
-            description: 'posts'
+            icon: 'linkedin-box.svg',
+            description: 'posts',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 3
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 0
+            }]
         }, {
             name: 'LinkedIn',
-            value: (262 + 358 + 1361).toString(),
-            description: 'views'
+            icon: 'linkedin-box.svg',
+            description: 'views',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 262 + 358 + 1361
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 0
+            }]
         }, {
             name: 'LinkedIn',
-            value: (7 + 3 + 23).toString(),
-            description: 'reactions'
+            icon: 'linkedin-box.svg',
+            description: 'reactions',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 7 + 3 + 23
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 0
+            }]
         }, {
             name: 'GumRoad',
-            value: '1',
-            description: 'pre-order'
+            icon: 'gumroad.ico',
+            description: 'pre-order',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 1
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 0
+            }]
         }, {
             name: 'GumRoad',
-            value: '$89',
-            description: 'revenue'
+            icon: 'gumroad.ico',
+            description: 'revenue',
+            valuePrefix: '$',
+            values: [{
+                year: 2019,
+                month: 'August',
+                value: 89
+            }, {
+                year: 2019,
+                month: 'July',
+                value: 0
+            }]
         }
         ];
     }
