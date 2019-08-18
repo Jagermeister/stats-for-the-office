@@ -34,8 +34,8 @@
                 </table>
             </ng-container>
             <table fxFlex="1 1 calc(33.3% - 32px)">
-                <tr *ngIf="!summary.isAverage"><td>{{totalValue(summary.values)}}</td></tr>
-                <tr *ngIf="summary.isAverage"><td>{{averageValue(summary.values)}}</td></tr>
+                <tr *ngIf="!summary.isAverage"><td>{{summary.valuePrefix}}{{totalValue(summary.values)}}</td></tr>
+                <tr *ngIf="summary.isAverage"><td>{{summary.valuePrefix}}{{averageValue(summary.values)}}</td></tr>
                 <tr><td class="durationTitle">{{summary.isAverage ? 'Average' : 'Total'}}</td></tr>
             </table>
         </div>

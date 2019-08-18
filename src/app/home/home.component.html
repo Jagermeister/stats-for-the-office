@@ -1,4 +1,12 @@
-<span>As of {{dateUpdated}}</span>
+<div style="text-align: center;">
+    <span style="font-size: 36px;">Stats for the Office</span>
+    <br/>
+    <span style="font-style: italic;">As of {{dateUpdated.toLocaleDateString('en-US', {
+        weekday: 'long',
+        month: 'long',
+        day: 'numeric'
+    })}} ... {{remainingDays}} days remaining</span>
+</div>
 <div style="padding: 20px;"
     fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="16px grid" fxLayoutAlign="flex-start">
     <app-summary *ngFor="let summary of summarys"

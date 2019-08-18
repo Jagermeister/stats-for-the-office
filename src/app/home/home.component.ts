@@ -5,13 +5,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-    public dateUpdated: string;
+    public dday: Date;
+    public dateUpdated: Date;
+    public remainingDays: number;
     public summarys: Summary[];
 
     constructor() { }
 
     ngOnInit() {
-        this.dateUpdated = '17 Aug, 2019';
+        this.dday = new Date(2019, 10, 18);
+        this.dateUpdated = new Date(2019, 7, 17);
+
+        const millisecondsInADay = 1000 * 60 * 60 * 24;
+        this.remainingDays = Math.max(
+            Math.floor((this.dday.getTime() - this.dateUpdated.getTime()) / millisecondsInADay), 0);
         this.summarys = [{
             name: 'MailChimp',
             icon: 'mailchimp.ico',
