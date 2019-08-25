@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
     ngOnInit() {
         this.dday = new Date(2019, 10, 18);
-        this.dateUpdated = new Date(2019, 7, 17);
+        this.dateUpdated = new Date(2019, 7, 24);
 
         const millisecondsInADay = 1000 * 60 * 60 * 24;
         this.remainingDays = Math.max(
@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 4
+                value: 5
             }, {
                 year: 2019,
                 month: 'July',
@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 28
+                value: 31
             }, {
                 year: 2019,
                 month: 'July',
@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 119
+                value: 123
             }, {
                 year: 2019,
                 month: 'July',
@@ -78,7 +78,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 259
+                value: 270
             }, {
                 year: 2019,
                 month: 'July',
@@ -92,7 +92,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 87.8
+                value: 86
             }, {
                 year: 2019,
                 month: 'July',
@@ -118,7 +118,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 510
+                value: 581
             }, {
                 year: 2019,
                 month: 'July',
