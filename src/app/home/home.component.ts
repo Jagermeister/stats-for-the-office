@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
     ngOnInit() {
         this.dday = new Date(2019, 10, 18);
-        this.dateUpdated = new Date(2019, 7, 24);
+        this.dateUpdated = new Date(2019, 7, 31);
 
         const millisecondsInADay = 1000 * 60 * 60 * 24;
         this.remainingDays = Math.max(
@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 31
+                value: 34
             }, {
                 year: 2019,
                 month: 'July',
@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 123
+                value: 129
             }, {
                 year: 2019,
                 month: 'July',
@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 1
+                value: 2
             }, {
                 year: 2019,
                 month: 'July',
@@ -78,7 +78,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 270
+                value: 285
             }, {
                 year: 2019,
                 month: 'July',
@@ -92,7 +92,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 86
+                value: 85.2
             }, {
                 year: 2019,
                 month: 'July',
@@ -105,7 +105,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 5
+                value: 6
             }, {
                 year: 2019,
                 month: 'July',
@@ -118,7 +118,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 581
+                value: 709
             }, {
                 year: 2019,
                 month: 'July',
@@ -131,7 +131,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'August',
-                value: 13
+                value: 15
             }, {
                 year: 2019,
                 month: 'July',
