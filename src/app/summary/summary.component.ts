@@ -18,7 +18,7 @@ export class SummaryComponent implements OnInit {
     }
 
     averageValue(summarys: SummaryDetail[]) {
-        return this.totalValue(summarys) / summarys.length;
+        return (this.totalValue(summarys) / summarys.length).toFixed(2);
     }
 
 }

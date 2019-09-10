@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
     ngOnInit() {
         this.dday = new Date(2019, 10, 18);
-        this.dateUpdated = new Date(2019, 7, 31);
+        this.dateUpdated = new Date(2019, 8, 9);
 
         const millisecondsInADay = 1000 * 60 * 60 * 24;
         this.remainingDays = Math.max(
@@ -24,6 +24,10 @@ export class HomeComponent implements OnInit {
             icon: 'mailchimp.ico',
             description: 'contacts',
             values: [{
+                year: 2019,
+                month: 'September',
+                value: 0
+            }, {
                 year: 2019,
                 month: 'August',
                 value: 5
@@ -38,6 +42,10 @@ export class HomeComponent implements OnInit {
             description: 'users',
             values: [{
                 year: 2019,
+                month: 'September',
+                value: 6
+            }, {
+                year: 2019,
                 month: 'August',
                 value: 34
             }, {
@@ -50,6 +58,10 @@ export class HomeComponent implements OnInit {
             icon: 'analytics.png',
             description: 'pageviews',
             values: [{
+                year: 2019,
+                month: 'September',
+                value: 12
+            }, {
                 year: 2019,
                 month: 'August',
                 value: 129
@@ -64,6 +76,10 @@ export class HomeComponent implements OnInit {
             description: 'click',
             values: [{
                 year: 2019,
+                month: 'September',
+                value: 0
+            }, {
+                year: 2019,
                 month: 'August',
                 value: 2
             }, {
@@ -76,6 +92,10 @@ export class HomeComponent implements OnInit {
             icon: 'search.png',
             description: 'impressions',
             values: [{
+                year: 2019,
+                month: 'September',
+                value: 24
+            }, {
                 year: 2019,
                 month: 'August',
                 value: 285
@@ -91,6 +111,10 @@ export class HomeComponent implements OnInit {
             isAverage: true,
             values: [{
                 year: 2019,
+                month: 'September',
+                value: 44.8
+            }, {
+                year: 2019,
                 month: 'August',
                 value: 85.2
             }, {
@@ -103,6 +127,10 @@ export class HomeComponent implements OnInit {
             icon: 'twitter-box.svg',
             description: 'tweets',
             values: [{
+                year: 2019,
+                month: 'September',
+                value: 2
+            }, {
                 year: 2019,
                 month: 'August',
                 value: 6
@@ -117,6 +145,10 @@ export class HomeComponent implements OnInit {
             description: 'impressions',
             values: [{
                 year: 2019,
+                month: 'September',
+                value: 119
+            }, {
+                year: 2019,
                 month: 'August',
                 value: 709
             }, {
@@ -129,6 +161,10 @@ export class HomeComponent implements OnInit {
             icon: 'twitter-box.svg',
             description: 'engagement',
             values: [{
+                year: 2019,
+                month: 'September',
+                value: 0
+            }, {
                 year: 2019,
                 month: 'August',
                 value: 15
@@ -143,6 +179,10 @@ export class HomeComponent implements OnInit {
             description: 'posts',
             values: [{
                 year: 2019,
+                month: 'September',
+                value: 0
+            }, {
+                year: 2019,
                 month: 'August',
                 value: 3
             }, {
@@ -155,6 +195,10 @@ export class HomeComponent implements OnInit {
             icon: 'linkedin-box.svg',
             description: 'views',
             values: [{
+                year: 2019,
+                month: 'September',
+                value: 0
+            }, {
                 year: 2019,
                 month: 'August',
                 value: 262 + 358 + 1361
@@ -169,6 +213,10 @@ export class HomeComponent implements OnInit {
             description: 'reactions',
             values: [{
                 year: 2019,
+                month: 'September',
+                value: 0
+            }, {
+                year: 2019,
                 month: 'August',
                 value: 7 + 3 + 23
             }, {
@@ -181,6 +229,10 @@ export class HomeComponent implements OnInit {
             icon: 'gumroad.ico',
             description: 'pre-order',
             values: [{
+                year: 2019,
+                month: 'September',
+                value: 0
+            }, {
                 year: 2019,
                 month: 'August',
                 value: 1
@@ -195,6 +247,10 @@ export class HomeComponent implements OnInit {
             description: 'revenue',
             valuePrefix: '$',
             values: [{
+                year: 2019,
+                month: 'September',
+                value: 0
+            }, {
                 year: 2019,
                 month: 'August',
                 value: 89
