@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
     ngOnInit() {
         this.dday = new Date(2019, 10, 18);
-        this.dateUpdated = new Date(2019, 8, 9);
+        this.dateUpdated = new Date(2019, 8, 14);
 
         const millisecondsInADay = 1000 * 60 * 60 * 24;
         this.remainingDays = Math.max(
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 6
+                value: 10
             }, {
                 year: 2019,
                 month: 'August',
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 12
+                value: 16
             }, {
                 year: 2019,
                 month: 'August',
@@ -94,7 +94,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 24
+                value: 66
             }, {
                 year: 2019,
                 month: 'August',
@@ -112,7 +112,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 44.8
+                value: 53.3
             }, {
                 year: 2019,
                 month: 'August',
@@ -146,7 +146,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 119
+                value: 314
             }, {
                 year: 2019,
                 month: 'August',
@@ -163,7 +163,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 0
+                value: 5
             }, {
                 year: 2019,
                 month: 'August',
