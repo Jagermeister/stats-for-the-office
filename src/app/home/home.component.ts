@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
-        this.dday = new Date(2019, 10, 18);
+        this.dday = new Date(2019, 10, 20);
         this.dateUpdated = new Date(2019, 8, 14);
 
         const millisecondsInADay = 1000 * 60 * 60 * 24;
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 10
+                value: 13
             }, {
                 year: 2019,
                 month: 'August',
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 16
+                value: 23
             }, {
                 year: 2019,
                 month: 'August',
@@ -94,7 +94,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 66
+                value: 131
             }, {
                 year: 2019,
                 month: 'August',
@@ -112,7 +112,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 53.3
+                value: 52.9
             }, {
                 year: 2019,
                 month: 'August',
@@ -146,7 +146,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 314
+                value: 415
             }, {
                 year: 2019,
                 month: 'August',
