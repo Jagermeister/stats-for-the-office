@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 13
+                value: 15
             }, {
                 year: 2019,
                 month: 'August',
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 23
+                value: 25
             }, {
                 year: 2019,
                 month: 'August',
@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 0
+                value: 1
             }, {
                 year: 2019,
                 month: 'August',
@@ -94,7 +94,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 131
+                value: 273
             }, {
                 year: 2019,
                 month: 'August',
@@ -112,7 +112,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 52.9
+                value: 49.9
             }, {
                 year: 2019,
                 month: 'August',
@@ -129,7 +129,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 2
+                value: 3
             }, {
                 year: 2019,
                 month: 'August',
@@ -146,7 +146,7 @@ export class HomeComponent implements OnInit {
             values: [{
                 year: 2019,
                 month: 'September',
-                value: 415
+                value: 463
             }, {
                 year: 2019,
                 month: 'August',
